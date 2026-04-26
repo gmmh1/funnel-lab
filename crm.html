@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FunnelLab CRM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin:0;
+  font-family:Inter;
+  background:#0b0d10;
+  color:#e5e7eb;
+}
+
+.sidebar {
+  position:fixed;
+  width:220px;
+  height:100%;
+  background:#111318;
+  padding:20px;
+}
+
+.main {
+  margin-left:240px;
+  padding:30px;
+}
+
+h1 {
+  background:linear-gradient(90deg,#ff0033,#39ff14,#00aaff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.card {
+  background:#121418;
+  padding:20px;
+  border-radius:12px;
+  margin-top:20px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <h3>FunnelLab CRM</h3>
+  <p><a href="index.html" style="color:#39ff14;">← Back to Site</a></p>
+</div>
+
+<div class="main">
+
+  <h1>Dashboard</h1>
+
+  <div class="grid">
+
+    <div class="card">Total Leads: 128</div>
+    <div class="card">Qualified: 54</div>
+    <div class="card">Booked Calls: 19</div>
+    <div class="card">Clients: 7</div>
+
+  </div>
+
+  <div class="card">
+    <h3>Recent Leads</h3>
+    <p>John Smith - Qualified</p>
+    <p>Sarah Lee - New</p>
+    <p>Mike Brown - Won</p>
+  </div>
+
+</div>
+
+</body>
+</html>
