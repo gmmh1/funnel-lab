@@ -2,152 +2,76 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>FunnelLab | Powered by GMHCO</title>
+<title>FunnelLab | Powered by GMHCO LTD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* =======================
-   BASE
-======================= */
 body {
   margin:0;
-  font-family:'Inter',sans-serif;
+  font-family:Inter;
   background:#0b0d10;
   color:#e5e7eb;
 }
 
-.container {
-  max-width:1100px;
-  margin:auto;
-  padding:40px 20px;
-}
-
-/* =======================
-   HEADER
-======================= */
 header {
   text-align:center;
   padding:90px 20px;
-  background: linear-gradient(135deg,#111318,#0b0d10);
-  border-bottom:1px solid rgba(255,0,0,0.15);
+  background:#111318;
 }
 
 h1 {
   font-size:46px;
-  background: linear-gradient(90deg,#ff0033,#39ff14,#00aaff);
+  background:linear-gradient(90deg,#ff0033,#39ff14,#00aaff);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
 
-/* =======================
-   GRID
-======================= */
+.container {
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
 .grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
+  gap:20px;
 }
 
-/* =======================
-   NEON FLOW CARDS
-======================= */
 .card {
-  position:relative;
   background:#121418;
-  padding:22px;
-  border-radius:16px;
-  overflow:hidden;
-  z-index:1;
-}
-
-.card::before {
-  content:"";
-  position:absolute;
-  inset:-2px;
-  border-radius:18px;
-
-  background: linear-gradient(
-    90deg,
-    #ff0033,
-    #39ff14,
-    #00aaff,
-    #ff0033
-  );
-
-  background-size:300% 300%;
-  animation: flow 5s linear infinite;
-
-  filter: blur(8px);
-  opacity:0.7;
-  z-index:-1;
-}
-
-.card::after {
-  content:"";
-  position:absolute;
-  inset:2px;
-  background:#121418;
+  padding:20px;
   border-radius:14px;
-  z-index:-1;
+  border:1px solid #1f2937;
 }
 
-@keyframes flow {
-  0% { background-position:0% 50%; }
-  100% { background-position:300% 50%; }
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  transition:0.3s;
-}
-
-/* =======================
-   BUTTON
-======================= */
 .btn {
   display:inline-block;
-  padding:12px 18px;
+  padding:12px 16px;
   margin-top:10px;
   border-radius:10px;
-  text-decoration:none;
+  background:linear-gradient(90deg,#ff0033,#00aaff);
   color:white;
-  background: linear-gradient(90deg,#ff0033,#00aaff);
-  cursor:pointer;
+  text-decoration:none;
 }
 
-.btn:hover {
-  background: linear-gradient(90deg,#39ff14,#00aaff);
-}
-
-/* =======================
-   FORM
-======================= */
 input, textarea {
   width:100%;
   padding:12px;
   margin:8px 0;
-  border-radius:10px;
-  border:none;
   background:#0f1115;
+  border:none;
   color:white;
+  border-radius:8px;
 }
 
-textarea {
-  min-height:100px;
-}
-
-/* =======================
-   FOOTER
-======================= */
 footer {
   text-align:center;
   padding:30px;
-  background:#0b0d10;
   color:#9ca3af;
-  border-top:1px solid rgba(0,170,255,0.2);
 }
 
 </style>
@@ -157,8 +81,11 @@ footer {
 
 <header>
   <h1>FunnelLab</h1>
-  <p>Powered by GMHCO LTD</p>
-  <p>Google Ads • Tracking • Funnel Systems • Data Analysis</p>
+  <p>Powered by GMHCO </p>
+  <p>Google Ads • Funnels • Tracking • Data Systems</p>
+
+  <!-- LINK TO CRM -->
+  <a class="btn" href="crm.html">Open CRM Dashboard</a>
 </header>
 
 <div class="container">
@@ -169,55 +96,22 @@ footer {
 
     <div class="card">
       <h3>Google Ads Systems</h3>
-      <p>Structured campaign setup using certified Google Ads methodology.</p>
+      <p>Campaign structure & optimisation based on certification standards.</p>
     </div>
 
     <div class="card">
       <h3>Tracking Setup</h3>
-      <p>Conversion tracking for accurate performance measurement.</p>
+      <p>Conversion tracking and measurement systems.</p>
     </div>
 
     <div class="card">
-      <h3>Data Analysis</h3>
-      <p>Performance insights using analytics and Python-based logic.</p>
+      <h3>Funnel Engineering</h3>
+      <p>Lead generation and conversion optimisation systems.</p>
     </div>
 
   </div>
 
-  <h2>System Layers</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Ad Layer</h3>
-      <p>Campaign structure & optimisation system.</p>
-    </div>
-
-    <div class="card">
-      <h3>Tracking Layer</h3>
-      <p>Measurement & conversion visibility system.</p>
-    </div>
-
-    <div class="card">
-      <h3>Funnel Layer</h3>
-      <p>Lead capture & conversion workflow system.</p>
-    </div>
-
-  </div>
-
-  <h2>Certifications</h2>
-
-  <div class="grid">
-
-    <div class="card">Google Ads Search Certification</div>
-    <div class="card">Google Ads Measurement Certification</div>
-    <div class="card">AI Performance Ads Certification</div>
-    <div class="card">Campaign Manager 360</div>
-    <div class="card">Data Analysis with Python</div>
-
-  </div>
-
-  <h2>Customer Enquiry</h2>
+  <h2>Free Funnel Review</h2>
 
   <div class="card">
 
@@ -235,41 +129,10 @@ footer {
 </div>
 
 <footer>
-© FunnelLab — Powered by GMHCO 2026
+© FunnelLab — Powered by GMHCO
 </footer>
 
-<script>
-
-async function submitLead() {
-
-  const data = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    website: document.getElementById("website").value,
-    message: document.getElementById("message").value
-  };
-
-  document.getElementById("status").innerText = "Sending...";
-
-  try {
-    const res = await fetch("https://YOUR-BACKEND-URL/api/lead", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-
-    if (res.ok) {
-      document.getElementById("status").innerText = "Enquiry sent successfully.";
-    } else {
-      document.getElementById("status").innerText = "Error sending enquiry.";
-    }
-
-  } catch (err) {
-    document.getElementById("status").innerText = "Network error.";
-  }
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
