@@ -10,7 +10,7 @@ This project is designed as a lightweight, deployable web presence with integrat
 ## 🚀 Live Website
 Once deployed via GitHub Pages:
 
-https://yourusername.github.io/funnel-lab/
+https://gmmh1.github.io/funnel-lab/
 
 ---
 
